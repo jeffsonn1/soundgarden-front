@@ -55,38 +55,34 @@
             </aside>
             <main class="col-9  p-5">
                 <div class="my-5">
-                    <h1>Novo evento</h1>
-
+                    <h1>Ingressos reservados</h1>
                 </div>
-                <div>
-                    <!-- - cadastro de evento (nome, atrações, descrição, horário, data, numero de ingressos) -->
-                    <form class="col-6">
-                        <div class="mb-3">
-                            <label for="nome" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="nome" aria-describedby="nome" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="atracoes" class="form-label">Atrações</label>
-                            <input type="text" class="form-control" id="atracoes" aria-describedby="atracoes" required>
-                            <small>insira o nome dos artistas separados por vírgula</small>
-                        </div>
-                        <div class="mb-3">
-                            <label for="descricao" class="form-label">Descrição</label>
-                            <textarea name="descricao" id="descricao" class="form-control" rows="5" required></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="data" class="form-label">Data</label>
-                            <input type="datetime" name="data" id="data" class="form-control"
-                                placeholder="00/00/00 00:00" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="lotacao" class="form-label">Lotação (número de ingressos disponiveis)</label>
-                            <input type="number" class="form-control" id="lotacao" aria-describedby="lotacao" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary" id="enviar">enviar</button>
-                        <br><br>
-                        <span id="msg-vld-lname" style="color: red;display: none;">Por favor, preencha todos os campos.</span>
-                    </form>
+                <div class="bd-example">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Quantidade</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbIngresso">
+                            <!-- <tr>
+                                <th scope="row">1</th>
+                                <td>05/03/2022 20:00</td>
+                                <td>Festival Coala</td>
+                                <td>Miley Cyrus, Liniker, Smashing Pumpkins</td>
+                                <td>
+                                    <a href="reservas.html" class="btn btn-dark">ver reservas</a>
+                                    <a href="editar.html" class="btn btn-secondary">editar</a>
+                                    <a href="editar.html" class="btn btn-danger">excluir</a>
+                                </td>
+                            </tr> -->
+                            
+                        </tbody>
+
+                    </table>
                 </div>
             </main>
         </div>
@@ -94,7 +90,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-    <script src="./js/cadastro-evento.js"></script>
+    <script src="./js/reservar-ingresso.js"></script>
 </body>
 
 </html>
