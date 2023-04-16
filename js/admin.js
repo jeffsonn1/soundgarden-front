@@ -14,7 +14,7 @@ function getApiEventos() {
       var tmEvento = "";
       var id = 1
       console.log(resposta);
-      resposta.forEach((user) => {
+      resposta.reverse().forEach((user) => {
         //pega os primeiros 10 digitos
         let scheduled = user.scheduled.substring(0, 10);
 
@@ -24,7 +24,7 @@ function getApiEventos() {
         +"</td>";
         tmEvento+="<td>"+user.name+"</td>";
         tmEvento+="<td>"+user.attractions+"</td>";
-        tmEvento+="<td><a href='reservas.html' class='btn btn-dark'>ver reservas</a> <a href='editar-evento.html' class='btn btn-secondary'>editar</a> <a href='excluir-evento.html' class='btn btn-danger'>excluir</a></td>";
+        tmEvento+="<td><a href='reservar-ingresso.html' class='btn btn-dark'>ver reservas</a> <a href='editar-evento.html?id="+user._id+"' class='btn btn-secondary'>editar</a> <a href='excluir-evento.html?id="+user._id+"' class='btn btn-danger'>excluir</a></td>";
         tmEvento+="</tr>";
         id++;
       });

@@ -1,5 +1,3 @@
-
-
 let enviarButton = document.getElementById('enviar');
 let nomeInput = document.getElementById('nome');
 let atracaoInput = document.getElementById('atracoes');
