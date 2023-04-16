@@ -15,9 +15,9 @@ function getApiEventos() {
       return resposta.json();
     }).then((resposta) => {
       //criar carrossel
-      var lmEvento = '<div class="carousel-item active"><img src="./img/show.jpg" class="d-block w-100" alt="foto de um show"><div class="carousel-caption d-none d-md-block"><h1>Sound Garden</h1><h3>Confira os eventos neste carrossel!</h3></div></div>';
+      var lmEvento = '<div class="carousel-item active"><img src="https://github.com/jeffsonn1/soundgarden-front/blob/main/img/show.jpg?raw=true" class="d-block w-100" alt="foto de um show"><div class="carousel-caption d-none d-md-block"><h1>Sound Garden</h1><h3>Confira os eventos neste carrossel!</h3></div></div>';
       resposta.reverse().forEach((user) => {
-        lmEvento+='<div class="carousel-item"> <img src="../img/show.jpg" class="d-block w-100" alt="foto de um show"> <div class="carousel-caption d-none d-md-block">';
+        lmEvento+='<div class="carousel-item"> <img src="https://github.com/jeffsonn1/soundgarden-front/blob/main/img/show.jpg?raw=true" class="d-block w-100" alt="foto de um show"> <div class="carousel-caption d-none d-md-block">';
         lmEvento+='<h1>'+user.name+'</h1>';
         lmEvento+='<h3>'+user.description+'</h3>';
         lmEvento+='</div> </div>';
